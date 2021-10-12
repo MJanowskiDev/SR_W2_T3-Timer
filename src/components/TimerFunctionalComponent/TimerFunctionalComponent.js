@@ -11,11 +11,7 @@ const TimerFunctionalComponent = (props) => {
     return () => clearInterval(interval);
   }, []);
 
-  return (
-    <>
-      <p>{`Komponent funkcyjny zliczył ${seconds} sekund`}</p>
-    </>
-  );
+  return <p>{`Komponent funkcyjny zliczył ${seconds} sekund`}</p>;
 };
 
 export default TimerFunctionalComponent;
